@@ -309,10 +309,9 @@ ul {
   text-align: center;
 }
 
-/* ______________________________________________________________________________*/
-/* Todos os produtos (Página produtos)*/
+/* ----------------------------------------------------------------------------------------- */
 
-.row2 {
+.row{
   justify-content: space-between;
   margin: 100px auto 50px;
 }
@@ -322,58 +321,54 @@ select{
   padding: 5px;
 }
 
-select:focus {
+select:focus{
   outline: none;
 }
 
-.page-btn {
+.page-btn{
   margin: 0 auto 80px;
 }
-
-.page-btn span {
+.page-btn span{
   display: inline-block;
   border: 1px solid #ff523b;
   margin-left: 10px;
   width: 40px;
   height: 40px;
-  text-align: center;/* Centraliza na horizontal*/
-  line-height: 40px;/* Centraliza na vertical*/
+  text-align: center;
+  line-height: 40px;
   cursor: pointer;
 }
 
-.page-btn span:hover {
+.page-btn span:hover{
   background: #ff523b;
   color: #fff;
 }
 
-/* ______________________________________________________________________________ */
-/* Produto detalhado (Página produto-detalhes) */
 
-.single-product {
+/* ------------------------------------------------------------------------------------------------ */
+
+.single-product{
   margin-top: 50px;
 }
-
-.single-product .col-2 img {
+.single-product .col-2 img{
   padding: 0;
 }
-
-.single-product .col-2 {
+.single-product .col-2{
   padding: 20px;
 }
-
-.single-product h4 {
+.single-product h4{
   margin: 20px 0;
   font-size: 22px;
   font-weight: bold;
 }
 
-.single-product select {
+.single-product select{
   display: block;
   padding: 10px;
   margin-top: 20px;
 }
 
-.single-product input {
+.single-product input{
   width: 50px;
   height: 40px;
   padding-left: 10px;
@@ -382,21 +377,16 @@ select:focus {
   border: 1px solid #ff523b;
 }
 
-input:focus {
+input:focus{
   outline: none;
 }
 
-.single-product .fa {
-  color: #ff523b;
-  margin-left: 10px;
-}
-
-.small-ims-row {
+.small-img-row {
   display: flex;
   justify-content: space-between;
 }
 
-.small-ims-col {
+.small-img-col{
   flex-basis: 24%;
   cursor: pointer;
 }
@@ -500,6 +490,73 @@ td:last-child {
 
 .iconify {
   padding: 0 10px;
+}
+
+/* ______________________________________________________________________________ */
+/*Sobre (Página sobre) */
+
+.fala {
+  margin: 0;
+  padding: 0;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.somos {
+  color: #ff523b;
+}
+
+.sobre {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* ______________________________________________________________________________ */
+/* Equipe de desenvolvimento (Página Sobre)*/
+
+.container-equipe {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.equipe-h2 {
+  border-top: 1px solid #ff523b;
+  padding-top: 15px;
+  text-align: center;
+  color: #ff523b;
+}
+
+/* Estilo das seção "Equipe"*/
+.equipe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.membro {
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+}
+
+.membro img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #333;
+}
+
+.membro h3 {
+   margin-top: 10px;
+}
+
+.membro p {
+  font-size: 14px;
 }
 
 
