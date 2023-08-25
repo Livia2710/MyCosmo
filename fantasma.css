@@ -1,0 +1,71 @@
+body {
+    background-color: black;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+.col {
+    background-color: #4b4a4a;
+    width: 341px;
+    height: 72.077px;
+    padding-top: 15px;
+    padding-bottom: 75px;
+    font-size: 32px;
+    font-style: normal;
+    font-family: 'Kaushan Script', cursive;
+    
+
+}
+
+h1 {
+    padding: 20px;
+    padding-top: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    padding: 25px;
+}
+
+.accordion-button{
+    font-size: inherit;
+    background-color: #4b4a4a;
+}
+
+.accordion-item {
+    border: 1px solid black
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: inherit;
+    background: #4b4a4a;
+    color: #FFF;
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0%) invert(70%);
+}
+
+.accordion-button:focus {
+    box-shadow: i;
+}
+
+.lugares {
+    padding-bottom: 50px;
+}
+
+.btn-lg {
+    padding: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+}
