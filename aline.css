@@ -9,7 +9,9 @@ body {
     padding-top: 14px;
 
 }
-
+td {
+    border: 1px solid gray;
+}
 .bi {
     color: white;
 }
@@ -23,7 +25,9 @@ p {
     padding-top: 8px;
     font-size: 35px;
 }
-
+.text-bg-light{
+    background-color: rgba(231, 195, 230, 0.349) !important;
+}
 .progress-navbar {
     padding-left: 15px;
 }
@@ -32,9 +36,46 @@ p {
     padding: 15px;
 }
 
-td {
-    border: 1px solid gray
-}
+.editable-list {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(83, 75, 86, 0.141);
+  }
+
+  .editable-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+  }
+
+  .editable-list-item input {
+    flex: 1;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid gray;
+  }
+
+  .editable-list-item button {
+    background-color: transparent;
+    border-radius: none;
+    color: purple;
+    cursor: pointer;
+    
+  }
+
+  .editable-list-item button:hover {
+    text-decoration: none;
+  }
+
+  #add-btn {
+    background-color: rgb(159, 137, 137);
+    border-radius: 15px;
+    
+  }
 
 
 /* 

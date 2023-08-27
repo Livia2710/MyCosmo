@@ -14,7 +14,7 @@
      <link rel="stylesheet" href="aline.css">
  
      <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-     <title>Aline</title>
+     <title>Beatriz</title>
 
      </head>
      <body>
@@ -141,25 +141,35 @@
          <p class="text-bg-light">
             Inventário  0/15
          </p>
-          <table class="table table-hover table-dark">
-            <tbody>
-              <tr>
-                <td>item 1  </td>
-              </tr>
-              <tr>
-            
-                <td>item 2</td>
-              </tr>
-              <tr>
-                <td>item 3</td>
-              </tr>
-              <tr>
-                <td>item 4</td>
-              </tr>
-             
-
-              
-            </tbody>
-          </table>
+         <div class="editable-list">
+          <div class="editable-list-item">
+            <input type="text" value="Item 1">
+            <button class="remove-btn">Remover</button>
+          </div>
+          <div class="editable-list-item">
+            <input type="text" value="Item 2">
+            <button class="remove-btn">Remover</button>
+          </div>
+          <button id="add-btn">Adicionar Item</button>
+        </div>
+      
+        <script>
+          document.getElementById("add-btn").addEventListener("click", function () {
+            const editableList = document.querySelector(".editable-list");
+            const newItem = document.createElement("div");
+            newItem.className = "editable-list-item";
+            newItem.innerHTML = `
+              <input type="text" value="Novo Item">
+              <button class="remove-btn">Remover</button>
+            `;
+            editableList.insertBefore(newItem, document.getElementById("add-btn"));
+          });
+      
+          document.addEventListener("click", function (event) {
+            if (event.target && event.target.className == "remove-btn") {
+              event.target.parentElement.remove();
+            }
+          });
+        </script>
      </body>
      </html>

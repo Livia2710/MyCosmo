@@ -14,16 +14,18 @@
      <link rel="stylesheet" href="aline.css">
  
      <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-     <title>Aline</title>
+     <title>Maria</title>
 
      </head>
      <body>
 
         <div class="avatar">
+          <a href="./fantasma.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                 <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
               </svg>
+            </a>
 
               <p> Doutor </p>
         </div>
@@ -104,7 +106,6 @@
          </ul>
         
         <hr>
-
          <!--
         </div>
 
@@ -119,7 +120,6 @@
             </div>
          -->
 
-         http://127.0.0.1:5500/HTML/index.html
 
           <div class="habilidades">
 
@@ -141,25 +141,36 @@
          <p class="text-bg-light">
             Inventário  0/15
          </p>
-          <table class="table table-hover table-dark">
-            <tbody>
-              <tr>
-                <td>item 1  </td>
-              </tr>
-              <tr>
+              <div class="editable-list">
+                <div class="editable-list-item">
+                  <input type="text" value="Item 1">
+                  <button class="remove-btn">Remover</button>
+                </div>
+                <div class="editable-list-item">
+                  <input type="text" value="Item 2">
+                  <button class="remove-btn">Remover</button>
+                </div>
+                <button id="add-btn">Adicionar Item</button>
+              </div>
             
-                <td>item 2</td>
-              </tr>
-              <tr>
-                <td>item 3</td>
-              </tr>
-              <tr>
-                <td>item 4</td>
-              </tr>
-             
+              <script>
+                document.getElementById("add-btn").addEventListener("click", function () {
+                  const editableList = document.querySelector(".editable-list");
+                  const newItem = document.createElement("div");
+                  newItem.className = "editable-list-item";
+                  newItem.innerHTML = `
+                    <input type="text" value="Novo Item">
+                    <button class="remove-btn">Remover</button>
+                  `;
+                  editableList.insertBefore(newItem, document.getElementById("add-btn"));
+                });
+            
+                document.addEventListener("click", function (event) {
+                  if (event.target && event.target.className == "remove-btn") {
+                    event.target.parentElement.remove();
+                  }
+                });
+              </script>
 
-              
-            </tbody>
-          </table>
      </body>
      </html>
